@@ -1,7 +1,6 @@
 import { Action, ActionPanel, Grid, Icon, List, getPreferenceValues } from "@raycast/api";
 import GetSessionTokenForm from "./GetSessionTokenForm";
 import { useEffect } from "react";
-
 const PushTarget = ({ children, onPop }: { children: React.ReactNode; onPop?: () => void }) => {
   useEffect(() => {
     return () => {
@@ -12,7 +11,6 @@ const PushTarget = ({ children, onPop }: { children: React.ReactNode; onPop?: ()
 };
 export const SessionTokenGuard = ({ type, children }: { type: "grid" | "list"; children: React.ReactNode }) => {
   const { NINTENDO_SESSION_TOKEN } = getPreferenceValues<{ NINTENDO_SESSION_TOKEN?: string }>();
-
   const emptyViewProps = {
     title: "Please get the session token first ( ↵ ).",
     description: "If you have already set the Session Token in the preference, \nplease reopen the command.",
