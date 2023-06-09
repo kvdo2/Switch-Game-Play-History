@@ -36,7 +36,7 @@
     },
     {
       "name": "GAME_TITLE_LANGUAGE_CODE",
-      "title": "Game Title Language",
+      "title": "Game Title Language (Beta)",
       "description": "Game title language depends on your Nintendo accout region. If you choose English, the English game title will be displayed as much as possible. For games that cannot be obtained, the original title is displayed.",
       "type": "dropdown",
       "default": "original",
